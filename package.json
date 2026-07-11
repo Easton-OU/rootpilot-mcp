@@ -1,0 +1,51 @@
+{
+  "name": "@rootpilot/mcp-ssh-diagnose",
+  "version": "0.1.0",
+  "description": "MCP server that safely collects read-only diagnostics from your servers over SSH. Bring your own LLM; the model does the reasoning.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "rootpilot-ssh-diagnose": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "hosts.example.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc -p tsconfig.test.json && node --test \"dist-test/test/**/*.test.js\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "ssh2": "^1.15.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/ssh2": "^1.15.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ssh",
+    "devops",
+    "docker",
+    "troubleshooting",
+    "diagnostics",
+    "sre"
+  ],
+  "homepage": "https://rootpilotx.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Easton-OU/rootpilot-mcp.git"
+  }
+}

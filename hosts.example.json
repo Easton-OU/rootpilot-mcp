@@ -1,0 +1,15 @@
+[
+  {
+    "name": "prod-1",
+    "host": "1.2.3.4",
+    "port": 22,
+    "user": "rootpilot",
+    "auth": { "type": "key", "keyPath": "~/.ssh/rootpilot_key" }
+  },
+  {
+    "name": "prod-2",
+    "host": "10.0.0.5",
+    "user": "ops",
+    "auth": { "type": "password", "password": "replace-me-or-use-a-key" }
+  }
+]
