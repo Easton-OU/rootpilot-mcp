@@ -1,6 +1,6 @@
 # rootpilot-ssh-diagnose
 
-> This is the open-source, bring-your-own-LLM taste of [RootPilot](https://rootpilotx.com). The full product adds calibrated diagnosis (89.7% across 29 standard failure scenarios, zero false alarms on healthy hosts), alert-triggered auto-diagnosis, history, and multi-host management → [rootpilotx.com](https://rootpilotx.com)
+> This is the open-source, bring-your-own-LLM taste of [RootPilot](https://rootpilotx.com). The full product adds calibrated diagnosis (89.7% across 29 standard failure scenarios, zero false alarms on healthy hosts), alert-triggered auto-diagnosis, history, and multi-host management → [rootpilotx.com](https://rootpilotx.com) · deployment repo: [rootpilot-release](https://github.com/Easton-OU/rootpilot-release)
 
 An [MCP](https://modelcontextprotocol.io) server that lets any MCP client — Claude Desktop, Claude Code, or your own — **safely collect read-only diagnostics from your servers over SSH**. It gathers evidence from a fixed whitelist of read-only commands; **your model does the reasoning**. The server never runs anything outside the whitelist, and never makes a change to your hosts.
 
