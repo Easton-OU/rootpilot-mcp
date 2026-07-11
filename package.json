@@ -47,5 +47,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Easton-OU/rootpilot-mcp.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }
