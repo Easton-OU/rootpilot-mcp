@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.easton-ou/rootpilot-ssh-diagnose",
+  "description": "Read-only SSH diagnostics for your servers: a fixed 38-command whitelist collects evidence (docker, disk, memory, network, logs), redacts secrets, and your model reasons about the root cause. No write path, no arbitrary commands.",
+  "repository": {
+    "url": "https://github.com/Easton-OU/rootpilot-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@rootpilot/mcp-ssh-diagnose",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RP_HOSTS",
+          "description": "Path to your hosts.json (see hosts.example.json in the repo)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "RP_PROBE_URL",
+          "description": "Target URL for the outbound-connectivity / DNS probes (default: https://cloudflare.com)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

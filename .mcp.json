@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "rootpilot-ssh-diagnose": {
+      "command": "npx",
+      "args": ["-y", "@rootpilot/mcp-ssh-diagnose"],
+      "env": {
+        "RP_HOSTS": "${PLUGIN_ROOT}/hosts.example.json"
+      }
+    }
+  }
+}

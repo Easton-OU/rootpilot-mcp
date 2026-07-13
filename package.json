@@ -1,6 +1,7 @@
 {
   "name": "@rootpilot/mcp-ssh-diagnose",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.easton-ou/rootpilot-ssh-diagnose",
   "description": "MCP server that safely collects read-only diagnostics from your servers over SSH. Bring your own LLM; the model does the reasoning.",
   "license": "MIT",
   "type": "module",
