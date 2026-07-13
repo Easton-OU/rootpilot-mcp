@@ -81,7 +81,7 @@ function renderItems(host: string, items: CollectItem[]): string {
 
 const server = new McpServer({
   name: 'rootpilot-ssh-diagnose',
-  version: '0.1.1',
+  version: '0.1.2',
 })
 
 // ── list_hosts ────────────────────────────────────────────────────────
